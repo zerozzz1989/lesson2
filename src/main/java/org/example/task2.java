@@ -22,7 +22,7 @@ public class task2 {
         double sum = a*b;
         System.out.println("area rectangle : " + sum);
 
-        double sum2 = 3.14*d;
+        double sum2 = Math.PI * (d * d);
         System.out.println("area circle : " + sum2);
     }
 
