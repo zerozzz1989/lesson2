@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class task2 {
+public class Task2 {
     public static void main(String[] args) {
         double a;
         double b;
