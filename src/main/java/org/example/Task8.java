@@ -1,21 +1,30 @@
 package org.example;
 
-public class Task8 {// Function to find the floor of the square root of `x`
-    public static int sqrt(int x)
-    {
-        // find the first positive number `i` such that `i×i` is greater than `x`
-        int i = 1;
-        while (i*i <= x) {
-            i++;
-        }
+public class Task8 {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 101; i++) {
+            if ((i % 5 == 0) && (i % 3 == 0)) {   //які діляться на 3 або на 5
+                if (i % 2 > 0) {                    //але не діляться на 2
+                    System.out.print(i);
 
-        return i - 1;
-    }
+                } else {
+                    if (i % 5 == 0) {
+                        System.out.print(" ");
+                    }
 
-    public static void main(String[] args)
-    {
-        for (int i = 0; i <= 16; i++) {
-            System.out.printf("sqrt(%d) = %d\n", i, sqrt(i));
+                    if (i % 3 == 0) {
+                        System.out.print(" ");
+                    }
+
+                }
+            }
         }
     }
 }
+
+
+/*
+Print all the numbers from 1 to 100 that are divisible by 3 or divisible by 5, but not divisible by 2.
+
+Виведіть усі числа від 1 до 100, які діляться на 3 або на 5, але не діляться на 2.
+ */

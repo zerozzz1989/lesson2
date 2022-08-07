@@ -5,7 +5,6 @@ public class Task4 {
 
     public static int sqrt(int x)
     {
-        // find the first positive number `i` such that `i×i` is greater than `x`
         int i = 1;
         while (i*i <= x) {
             i++;
@@ -22,26 +21,12 @@ public class Task4 {
         }
     }
 }
-    // driver code
-   // public static void main(String args[]) {
-       //  double[] myArray = new double[10]; // обявляємо масив
-        // double [] myArray2 = new double[10]; // обявляємо масив
 
-     //   double inin=Math.sqrt(myArray);
-
-       // for (int index = 1; index < myArray.length; index++) {    //виводимо з указаного числа
-       //     myArray[index] = index;
-      //      System.out.println("print numbers without zero: " + inin);                 //виводимо числа
-
-       // System.out.println("z = " + z[index]);
-       // double x = 9;
-      //  double z=Math.sqrt(x);
-       // System.out.println("z = " + z);
-
-
-      //  }
-   // }
 
 //щось ти в 4му завданні фігню якусь написав. Тобі треба створити 1 масив з числами. Створити другий масив такої ж довжини.
 // Потім в циклі знаходити корінь квадратний кожного елемента і записувати відразу в новий масив
+
+/*    Create two arrays of 10 integers. Find the square root of each element in the first array and
+put the result of it to the second array. Print second array to the console.
+ */
 

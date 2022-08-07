@@ -2,12 +2,18 @@ package org.example;
 import java.util.Scanner;
 
 
+
 import static java.lang.System.in;
+import static org.example.Task2.getString;
 
 public class Task6 {
     public static void main(String[] args) {
         System.out.println("a)");
-        for (int i = 0; i < 8; i++) {    //висота
+        System.out.println("Enter number to a)");
+        double a;
+        a = Double.parseDouble(getString());
+
+        for (int i = 0; i < a; i++) {    //висота
             for (int j = 0; j < 8; j++) {    //ширина
                 System.out.print("*");
             }
@@ -29,7 +35,10 @@ public class Task6 {
             }
 
             System.out.println("c)");
-            for (int i = 0; i < 7; i++)  //висота
+            System.out.println("Enter number to d)");
+            double с;                               //перемена
+            с= Double.parseDouble(getString());     //вводимо число з консолі
+            for (int i = 0; i < с; i++)  //висота
             {
                 for (int j = 0; j <= i; j++) //додає по одному на кожну строку
                 {
@@ -39,7 +48,9 @@ public class Task6 {
             }
 
             System.out.println("d)");
-            int n = 5;
+            System.out.println("Enter number to d)");
+            double n;                               //перемена
+            n= Double.parseDouble(getString());     //вводимо число з консолі
             for (int i = 1; i <= n; i++) {    //висота
                 for (int j = i; j <= n; j++) {    //ширина
                     System.out.print(" ");
@@ -56,7 +67,11 @@ public class Task6 {
             }
         }
 
+   /*
+   Create a program that print to the console following figures. Use loops, asterisks("*") and spaces (" ").
 
+   Я тут трохи погрався)
+   */
 
 
 
