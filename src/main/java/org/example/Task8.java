@@ -3,24 +3,23 @@ package org.example;
 public class Task8 {
     public static void main(String[] args) {
         for (int i = 1; i <= 101; i++) {
-            if ((i % 5 == 0) && (i % 3 == 0)) {   //які діляться на 3 або на 5
+            if ((i % 5 == 0) || (i % 3 == 0)) {   //які діляться на 3 або на 5. Символ || це або. Символ && це як і.
                 if (i % 2 > 0) {                    //але не діляться на 2
                     System.out.print(i);
 
                 } else {
-                    if (i % 5 == 0) {
+                  //  if (i % 5 == 0) {
                         System.out.print(" ");
                     }
 
-                    if (i % 3 == 0) {
-                        System.out.print(" ");
+                   // if (i % 3 == 0) {
+                   //     System.out.print(" ");
                     }
 
                 }
             }
         }
-    }
-}
+
 
 
 /*
