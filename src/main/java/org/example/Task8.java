@@ -8,12 +8,10 @@ public class Task8 {
                     System.out.print(i);
 
                 } else {
-                  //  if (i % 5 == 0) {
                         System.out.print(" ");
                     }
 
-                   // if (i % 3 == 0) {
-                   //     System.out.print(" ");
+
                     }
 
                 }

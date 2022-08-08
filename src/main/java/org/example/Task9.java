@@ -1,8 +1,6 @@
 package org.example;
 import java.util.*;
 
-//import java.util.Arrays;
-
 public class Task9 {
     public static void main(String[] args) {
         //Створюэмо масив випадкових чисел
@@ -13,14 +11,21 @@ public class Task9 {
         }
         System.out.print("\nSorted: \n");               //"\nSorted: \n" - виводить з нового рядка
 
-        Arrays.sort(arr);                               //сортуємо масив
-
-         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + "  ");
+        for (int left = 0; left < arr.length; left++) {
+            int value = arr[left];                                      // Отримуємо значення елемента
+            int i = left - 1;                                           // Переміщаємося елементами, які перед витягнутим елементом
+            for (; i >= 0; i--) {
+                if (value < arr[i]) {                                   // Якщо витягли менше значення — пересуваємо більший елемент далі
+                    arr[i + 1] = arr[i];
+                } else {
+                    break;                                              // Якщо витягнутий елемент більший — зупиняємось
+                }
+            }
+            arr[i + 1] = value;                                         // У місце, що звільнилося, вставляємо витягнуте значення
         }
+        System.out.println(Arrays.toString(arr));
     }
 }
-
 
 /*
 Create an array of any length and fill it with random integers.
